@@ -1,36 +1,17 @@
 @charset "UTF-8";
 
-/* li:nth-child(2n) { li중 짝수
-	background: white;
-}
-
-li:nth-child(2n+1) { li중 홀수
-	background: green;
-}
-
-li:first-child {
-	border-radius : 0 0 0 0px;
-}
-
-li:last-child {
-	border-radius : 0 0 0 0;
-} */
-
-
-
-
 #total { /* id를 선택해서 스타일을 지정할 때는 #을 앞에 쓴다. */
 	
 }
 
 #top {
-	width: 1800px;
+	width: 1700px;
 	height: 150px;
 	background: none;
 }
 
 #top2 {
-	width: 1800px;
+	width: 1700px;
 	height: 60px;
 	background: MediumSeaGreen;
 	font-size: 17px;
@@ -38,18 +19,18 @@ li:last-child {
 
 #top3 {
 	width: 140px;
-	height: 400px;
-	background: orange;
+	height: 500px;
+	background: black;
 	color: white;
 	top: 5px;
 	right: 0px;
-	position: fixed; /* 위치 고정. 다른 내용이 움직여도 얘는 안움직인다. */
+	position: fixed; /* 위치 고정s. 다른 내용이 움직여도 얘는 안움직인다. */
 	border-radius: 0px 0px 50px 30px; /* 장바구니 모서리 둥근정도 설정 */
 }
 
 #center { /* 메인페이지 쓰는사람 : 나 */
 	background: pink;
-	width: 1800px;
+	width: 1700px;
 	height: 2000px;
 }
 

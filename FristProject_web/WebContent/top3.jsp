@@ -1,10 +1,14 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%
+	String id = request.getParameter("id");
+%>
 <style>
 li {
-	margin: 5px 10px 0 -30px; /* 위 오른쪽 아래 왼쪽 */
-	padding: 5px;
+	margin: 5px 10px 0 0; /* 위 오른쪽 아래 왼쪽 */
+	padding: 0px;
 	list-style: none;
 	float: left; 
 	font-size: 20px;
@@ -12,14 +16,14 @@ li {
 }
 
 a {
-	font-size: 16px;
-	padding: 3px;
-	margin: 0 0 0 0;
+	font-size: 15px;
+	padding: 1px;
+	margin: 0 0 0 -10px;
 }
 </style>
 </head>
 <ul><!-- unordered list -->
-	<li>ㅇㅇㅇ님<br> <!-- a href 안붙어 있으면 li가 관여  -->
+	<li><%= id%> 님<br> <!-- a href 안붙어 있으면 li가 관여  -->
 		환영합니다.</li>    
 </ul>
 <ul><!-- unordered list -->

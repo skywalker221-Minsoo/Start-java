@@ -29,7 +29,7 @@ button {
 	<!-- action : 입력값을 받아서 처리하는 다음 페이지를 지정 -->
 	<h1 class="center">사이트 이름 및 검색</h1>
 	<form action="search.jsp">
-		<input name="subject">
+		<input name="title">
 		<button type="submit">검색</button>
 	</form>
 </body>

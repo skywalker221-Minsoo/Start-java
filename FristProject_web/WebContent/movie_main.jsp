@@ -3,9 +3,11 @@
 	pageEncoding="UTF-8"%>
 
 <%
-	// HttpServletRequest request = new HttpServletRequest();
-String id = request.getParameter("id");
-String pw = request.getParameter("pw");
+	//HttpServletRequest request2 = new HttpServletRequest();
+	String id = request.getParameter("id");
+	String pw = request.getParameter("pw");
+	String genre = request.getParameter("genre");
+	
 %>
 
 <!DOCTYPE html>
@@ -26,347 +28,423 @@ String pw = request.getParameter("pw");
 			<!-- 영화 선택 탭 -->
 			<jsp:include page="top2.jsp"></jsp:include>
 		</div>
-		<div id="top3">
+ 		<div id="top3">
 			<!-- 개인정보 및 고객센터 탭 -->
 			<jsp:include page="top3.jsp"></jsp:include>
-		</div>
+		</div> 
 		<div id="center">
-			<!-- 영화 상세정보 탭 이 부분은 크롤링 해서 DB에 넣은 다음에 불러오던가 해야할거 같은데 아마 다음주 부터 강사님께 질문하면서 만들게 될거 같습니다.-->
-			<div class="WHE7ib mpg5gc">
-				<c-wiz jsrenderer="PAQZbb" jsshadow="" jsdata="deferred-c539"
-					data-p="%.@.true]" jscontroller="JpEzfb" jsaction="aM6rcc:MRWqkd"
-					data-node-index="1;0" autoupdate="" jsmodel="hc6Ubd">
-				<div
-					class="uMConb  V2Vq5e POHYmb-T8c9cb YEDFMc-T8c9cb y1APZe-T8c9cb q9QOMe"
-					jslog="38003; 1:500|CAIaLAoTEhEKC1g3RzFzb3F6YVJBEAYYBBAAMhMI7vz08fvh7gIVRi2WCh2wdQWMqgIuGiwIABITChEKC1g3RzFzb3F6YVJBEAYYBEoTCO789PH74e4CFUYtlgodsHUFjA==; track:click,impression">
-					<div class="Vpfmgd">
-						<div class="uzcko">
-							<div class="N9c7d eJxoSc">
-								<span class="yNWQ8e K3IMke " style="height: 230px; width: 160px"><img
-									data-src="https://play-lh.googleusercontent.com/-0ThDhMWcaGtY58Ch4t-IhNJtQqi5RHY3bxqul3ixjFf_0mDYLpYZCvzh-hA1B8Jg5cE=w160-h230-rw"
-									data-ils="3" jsaction="rcuQ6b:trigger.M8vzZb;"
-									data-srcset="https://play-lh.googleusercontent.com/-0ThDhMWcaGtY58Ch4t-IhNJtQqi5RHY3bxqul3ixjFf_0mDYLpYZCvzh-hA1B8Jg5cE=w320-h460-rw 2x"
-									class="T75of QNCnCf" aria-hidden="true"
-									style="max-height: 230px; max-width: 160px; height: 230px"></span><span
-									class="ZYyTud K3IMke " style="height: 230px; width: 160px"><img
-									data-ils="3" jsaction="rcuQ6b:trigger.M8vzZb;"
-									class="T75of QNCnCf" aria-hidden="true"
-									style="max-height: 230px; max-width: 160px; height: 230px"
-									srcset="https://play-lh.googleusercontent.com/-0ThDhMWcaGtY58Ch4t-IhNJtQqi5RHY3bxqul3ixjFf_0mDYLpYZCvzh-hA1B8Jg5cE=w320-h460-rw 2x"
-									src="https://play-lh.googleusercontent.com/-0ThDhMWcaGtY58Ch4t-IhNJtQqi5RHY3bxqul3ixjFf_0mDYLpYZCvzh-hA1B8Jg5cE=w160-h230-rw"></span><span
-									class="kJ9uy K3IMke " style="height: 230px; width: 160px"><img
-									data-src="https://play-lh.googleusercontent.com/-0ThDhMWcaGtY58Ch4t-IhNJtQqi5RHY3bxqul3ixjFf_0mDYLpYZCvzh-hA1B8Jg5cE=w160-h230-rw"
-									data-ils="3" jsaction="rcuQ6b:trigger.M8vzZb;"
-									data-srcset="https://play-lh.googleusercontent.com/-0ThDhMWcaGtY58Ch4t-IhNJtQqi5RHY3bxqul3ixjFf_0mDYLpYZCvzh-hA1B8Jg5cE=w320-h460-rw 2x"
-									class="T75of QNCnCf" aria-hidden="true"
-									style="max-height: 230px; max-width: 160px; height: 230px"></span>
-								<div class="wXUyZd">
-									<button aria-label="Marvel Studios' Avengers: Endgame 재생"
-										class="MMZjL sgOwM  " jscontroller="HnDLGf"
-										jsaction="click:axChxd" jsname="pWHZ7d"
-										data-should-show-kav="true"
-										data-trailer-url="https://play.google.com/video/lava/web/player/yt:movie:NQvgsIgs56g?autoplay=1&amp;authuser=0&amp;embed=play"
-										data-web-presentation="1" data-item-id="X7G1soqzaRA"
-										data-item-type="1"></button>
-								</div>
-							</div>
-						</div>
-						<div class="RZEgze">
-							<div class="vU6FJ p63iDd">
-								<a
-									href="/store/movies/details/Marvel_Studios_Avengers_Endgame?id=X7G1soqzaRA"
-									aria-hidden="true" tabindex="-1" class="JC71ub"></a>
-								<div class="k6AFYd">
-									<div class="bQVA0c">
-										<div class="PODJt">
-											<div class="kCSSQe">
-												<div class="b8cIId ReQCgd Q9MA7b">
-													<a
-														href="/store/movies/details/Marvel_Studios_Avengers_Endgame?id=X7G1soqzaRA"><div
-															class="WsMG1c nnK0zc"
-															title="Marvel Studios' Avengers: Endgame">Marvel
-															Studios' Avengers: Endgame</div></a>
-													<div class="cqtbn"></div>
-												</div>
-												<div>영어 오디오</div>
-												<div class="b8cIId f5NCO">
-													<a
-														href="/store/movies/details/Marvel_Studios_Avengers_Endgame?id=X7G1soqzaRA">The
-														fourth installment in the Avengers saga is the culmination
-														of 22 interconnected Marvel films and the climax of an
-														epic journey. The world's greatest heroes will finally
-														understand just how fragile our reality is-and the
-														sacrifices that must be made to uphold it-in a story of
-														friendship, teamwork and setting aside differences to
-														overcome an impossible obstacle.DFL/2/31/2019-MUM</a>
-													<div class="cqtbn xKFUib"></div>
-												</div>
-											</div>
-										</div>
+			<div id="content">
+				<div class="article">
+					<div class="obj_section">
+						<div class="lst_wrap">
+							<ul class="lst_detail_t1">
+							
+								<li>
+									<div class="thumb">
+										<a href="specific1.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210107_160/1609984702837oNdmw_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="소울"></a>
 									</div>
-									<div class="Z2nl8b">
-										<div class="PODJt">
-											<div class="kCSSQe">
-												<div class="pf5lIe">
-													<div aria-label="별표 5개 만점에 4.7개를 받았습니다." role="img">
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="L0jl5e bUWb7c cm4lTe">
-															<div class="vQHuPe bUWb7c D3FNOd"
-																style="width: 67.65559999999996%"></div>
-														</div>
-													</div>
-												</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_all">소울 </span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class = ico_rating_all>15세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 93.3%"></span></span>
+													<span class="num">9.33</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">애니메이션</span>
+													<span class="split">|</span>107분 <span class="split">|</span> 2021.01.20 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">피트 닥터</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">제이미 폭스, 티나 페이, 다비드 딕스</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=184517" class="btn_rsv">결재하기</a><!-- 결재페이지 소환!! --><!-- N=a:nol.ticket,r:1,i:184517 -->
 											</div>
-											<div class="zYPPle">
-												<div jsname="zVnJac">
-													<button class="svCDYe aYzfud YpSFl  " jscontroller="chfSwc"
-														jsaction="MH7vAb" jsmodel="UfnShf"
-														data-item-id="%.@.&quot;X7G1soqzaRA&quot;,1]"
-														data-require-confirmation-if-single-offer="true"
-														jslog="36906; 1:200|CAIaLAoTEhEKC1g3RzFzb3F6YVJBEAYYBBAAMhMI7vz08fvh7gIVRi2WCh2wdQWMqgIuGiwIABITChEKC1g3RzFzb3F6YVJBEAYYBEoTCO789PH74e4CFUYtlgodsHUFjA==; track:click,impression">
-														<div class="LCATme">
-															<span class="VfPpfd ZdBevf i5DZme"><span>₹100.00</span></span>
-														</div>
-													</button>
-												</div>
+											<div class="btn_t1">    
+												<a href="specific1.jsp" class="item2">예고편</a> <!-- N=a:nol.trailer,r:1,i:184517 -->
 											</div>
-										</div>
+										</dd>
+									</dl>
+								</li>
+	
+								<li>
+									<div class="thumb">
+										<a href="specific2.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210126_174/1611638248803840HH_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="극장판 귀멸의 칼날: 무한열차편"></a><!-- N=a:nol.img,r:2,i:196051 -->
 									</div>
-								</div>
-							</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_all">극장판 귀멸의 칼날 : 무한열차편 </span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class = ico_rating_all>15세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 92.2%"></span></span>
+													<span class="num">9.22</span><!-- N=a:nol.urating -->
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">애니메이션</span>
+													<span class="split">|</span> 117분 <span class="split">|</span> 2021.01.27 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">소토자키 하루오</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">하나에 나츠키, 키토 아카리</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=196051" class="btn_rsv">결재하기</a><!-- N=a:nol.ticket,r:2,i:196051 -->
+											</div>
+											<div class="btn_t1">
+												<a href="specific2.jsp" class="item2">예고편</a> <!-- N=a:nol.trailer,r:2,i:196051 -->
+											</div>
+											
+										</dd>
+									</dl>
+								</li>
+								
+								<li>
+									<div class="thumb">
+										<a href="specific3.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210217_241/1613552832867Ef7Rb_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="미션 파서블"></a>
+									</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_15">미션 파서블</span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class="ico_rating_15">15세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 81.8%"></span></span>
+													<span class="num">8.18</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">코미디, 액션</span>
+													<span class="split">|</span> 105분 <span class="split">|</span> 2021.02.17 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">김형주</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">김영광, 이선빈</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=189124" class="btn_rsv">결재하기</a><!-- N=a:nol.ticket,r:3,i:189124 -->
+											</div>
+											<div class="btn_t1">
+												<a href="specific3.jsp" class="item2">예고편</a><!-- N=a:nol.trailer,r:3,i:189124 -->
+											</div>
+										</dd>
+									</dl>
+								</li>
+		
+								<li>
+									<div class="thumb">
+										<a href="specific4.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210217_105/1613522931191Xy0ke_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="새해전야"></a>
+									</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_12">새해전야</span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class="ico_rating_12">12세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 71.7%"></span></span>
+													<span class="num">7.17</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">멜로, 로맨스</span>
+													<span class="split">|</span> 114분 <span class="split">|</span> 2021.02.10 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">홍지영</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">김강우, 유인나, 유연석, 이연희, 이동휘, 천두링, 염혜란, 수영, 유태오</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=190382" class="btn_rsv">결재하기</a>
+											</div>
+											<div class="btn_t1">
+													<a href="specific4.jsp" class="item2">예고편</a>
+											</div>
+										</dd>
+									</dl>
+								</li>
+		
+								<li>
+									<div class="thumb">
+										<a href="specific5.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210114_78/1610588407942CoL2I_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="세자매"></a>
+									</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_15">세자매</span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class="ico_rating_15">15세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 84.6%"></span></span>
+													<span class="num">8.46</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">드라마</span>
+													<span class="split">|</span> 115분 <span class="split">|</span> 2021.01.27 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">이승원</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">문소리, 김선영, 장윤주</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=193328" class="btn_rsv">결재하기</a>
+											</div>
+											<div class="btn_t1">
+												<a href="specific5.jsp" class="item2">예고편</a><!-- N=a:nol.trailer,r:5,i:193328 -->
+											</div>
+										</dd>
+									</dl>
+								</li>
+								
+								<li>
+									<div class="thumb">
+										<a href="specific6.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210201_280/16121642953139VXAE_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="더블패티"></a>
+									</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_15">더블패티</span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class="ico_rating_15">15세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 75.4%"></span></span>
+													<span class="num">7.54</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">드라마</span>
+													<span class="split">|</span> 107분 <span class="split">|</span> 2021.02.17 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">백승환</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">신승호, 아이린, 송지인</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=196361" class="btn_rsv">결재하기</a>
+											</div>
+											<div class="btn_t1">
+												<a href="specific6.jsp" class="item2">예고편</a> <!-- N=a:nol.trailer,r:6,i:196361 -->
+											</div>
+										</dd>
+									</dl>
+								</li>
+		
+								<li>
+									<div class="thumb">
+										<a href="specific7.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210129_146/1611912316783y8rDf_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="해리 포터와 불의 잔"></a>
+									</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_12">해리 포터와 불의 잔</span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class="ico_rating_12">12세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 80.1%"></span></span>
+													<span class="num">8.01</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">판타지, 가족, 모험, 액션</span>
+													<span class="split">|</span> 156분 <span class="split">|</span> 2021.02.10 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">마이크 뉴웰</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">다니엘 래드클리프, 엠마 왓슨, 루퍼트 그린트</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=37883" class="btn_rsv">결재하기</a>
+											</div>
+											<div class="btn_t1">
+												<a href="specific7.jsp" class="item2">예고편</a> <!-- N=a:nol.trailer,r:7,i:37883 -->
+											</div>
+										</dd>
+									</dl>
+								</li>
+		
+								<li>
+									<div class="thumb">
+										<a href="specific8.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210111_41/1610333478672K6ihS_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="해피 투게더"></a>
+									</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_15">해피 투게더</span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+											<span class="ico_rating_15">15세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 91.8%"></span></span>
+													<span class="num">9.18</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">드라마</span>
+													<span class="split">|</span> 97분 <span class="split">|</span> 2021.02.04 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">왕가위</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">장국영, 양조위, 장첸</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=19335" class="btn_rsv">결재하기</a>
+											</div>
+											<div class="btn_t1">
+												<a href="specific8.jsp" class="item2">예고편</a>
+											</div>
+										</dd>
+									</dl>
+								</li>
+		
+								<li>
+									<div class="thumb">
+										<a href="specific9.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210125_20/1611551696077lGGQ8_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="해변의 에트랑제"></a>
+									</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_15">해변의 에트랑제</span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class="ico_rating_15">15세 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 94.1%"></span></span>
+													<span class="num">9.41</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">애니메이션, 멜로, 로맨스
+													<span class="split">|</span> 59분 <span class="split">|</span> 2021.02.18 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">오오하시 아키요</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">무라타 타이시, 마츠오카 요시츠구, 시마무라 유우, 이토 카나에</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=196375" class="btn_rsv">결재하기</a>
+											</div>
+											<div class="btn_t1">
+												<a href="specific9.jsp" class="item2">예고편</a><!-- N=a:nol.trailer,r:9,i:196375 -->
+											</div>
+										</dd>
+									</dl>
+								</li>
+		
+								<li>
+									<div class="thumb">
+										<a href="specific10.jsp">
+										<img src="https://movie-phinf.pstatic.net/20210107_98/1610010371111nd2e9_JPEG/movie_image.jpg?type=m99_141_2"
+											alt="드림빌더"></a>
+									</div>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_all">드림빌더</span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class="ico_rating_all">전체 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 86.7%"></span></span>
+													<span class="num">8.67</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">애니메이션, 모험, 가족, 판타지</span>
+													<span class="split">|</span> 80분 <span class="split">|</span> 2021.02.10 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">킴 하겐 젠슨</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">
+													</span>
+												</dt>
+											</dl>
+										</dd>
+										<dd class="info_t1">
+											<div class="btn_area">
+												<a href="/movie/bi/mi/reserve.nhn?code=196375" class="btn_rsv">결재하기</a>
+											</div>
+											<div class="btn_t1">
+												<a href="specific10.jsp" class="item2">예고편</a><!-- N=a:nol.trailer,r:9,i:196375 -->
+											</div>
+										</dd>
+									</dl>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<c-data id="c539"
-					jsdata=" UbHxed;_;$1045 OhlBSe;X7G1soqzaRA,1;$1046 QwEV2c;X7G1soqzaRA,1;$1044"></c-data></c-wiz>
 			</div>
-			<div class="WHE7ib mpg5gc">
-				<c-wiz jsrenderer="PAQZbb" jsshadow="" jsdata="deferred-c416"
-					data-p="%.@.true]" jscontroller="JpEzfb" jsaction="aM6rcc:MRWqkd"
-					data-node-index="1;1" autoupdate="" jsmodel="hc6Ubd">
-				<div
-					class="uMConb  V2Vq5e POHYmb-T8c9cb YEDFMc-T8c9cb y1APZe-T8c9cb q9QOMe"
-					jslog="38003; 1:500|CAIaLgoVEhMKDXRybjU3TzU4NkhvLlAQBhgEEAEyEwjinObz++HuAhWap5YKHVH0AdOqAjAaLggBEhUKEwoNdHJuNTdPNTg2SG8uUBAGGARKEwjinObz++HuAhWap5YKHVH0AdM=; track:click,impression">
-					<div class="Vpfmgd">
-						<div class="uzcko">
-							<div class="N9c7d eJxoSc">
-								<span class="yNWQ8e K3IMke " style="height: 230px; width: 160px"><img
-									data-ils="3" jsaction="rcuQ6b:trigger.M8vzZb;"
-									class="T75of QNCnCf" aria-hidden="true"
-									style="max-height: 230px; max-width: 160px; height: 230px"
-									srcset="https://play-lh.googleusercontent.com/u80sPxZecl8oIKUxSfS_F1fi10kghFo2K3r4HcyH4zYYLWncav8VBOUahev_toAfy6L9uQwOO4HhN7uqSNoJ=w320-h460-rw 2x"
-									src="https://play-lh.googleusercontent.com/u80sPxZecl8oIKUxSfS_F1fi10kghFo2K3r4HcyH4zYYLWncav8VBOUahev_toAfy6L9uQwOO4HhN7uqSNoJ=w160-h230-rw"></span><span
-									class="ZYyTud K3IMke " style="height: 230px; width: 160px"></span><span
-									class="kJ9uy K3IMke " style="height: 230px; width: 160px"></span>
-								<div class="wXUyZd">
-									<button aria-label="테넷 재생" class="MMZjL sgOwM  "
-										jscontroller="HnDLGf" jsaction="click:axChxd" jsname="pWHZ7d"
-										data-should-show-kav="true"
-										data-trailer-url="https://play.google.com/video/lava/web/player/yt:movie:twWhPQxZur4.P?autoplay=1&amp;authuser=0&amp;embed=play"
-										data-web-presentation="1" data-item-id="trn57O586Ho.P"
-										data-item-type="1"></button>
-								</div>
-							</div>
-						</div>
-						<div class="RZEgze">
-							<div class="vU6FJ p63iDd">
-								<a
-									href="/store/movies/details/%ED%85%8C%EB%84%B7?id=trn57O586Ho.P"
-									aria-hidden="true" tabindex="-1" class="JC71ub"></a>
-								<div class="k6AFYd">
-									<div class="bQVA0c">
-										<div class="PODJt">
-											<div class="kCSSQe">
-												<div class="b8cIId ReQCgd Q9MA7b">
-													<a
-														href="/store/movies/details/%ED%85%8C%EB%84%B7?id=trn57O586Ho.P"><div
-															class="WsMG1c nnK0zc" title="테넷">테넷</div></a>
-													<div class="cqtbn"></div>
-												</div>
-												<div class="b8cIId ReQCgd KoLSrc">
-													<a href="/store/movies/category/1" class="mnKHRc"><div
-															class="KoLSrc">액션/어드벤처</div></a>
-													<div class="cqtbn"></div>
-												</div>
-												<div class="b8cIId f5NCO">
-													<a
-														href="/store/movies/details/%ED%85%8C%EB%84%B7?id=trn57O586Ho.P">단
-														한 단어—테넷—으로 무장하고 전 세계의 생존을 위해 싸우는 주인공은 실제 시간 이면의 어딘가에서 펼쳐질
-														임무를 띠고 국제적인 첩보 활동의 불가사의 한 세계를 여행합니다.</a>
-													<div class="cqtbn xKFUib"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="Z2nl8b">
-										<div class="PODJt">
-											<div class="kCSSQe">
-												<div class="pf5lIe">
-													<div aria-label="별표 5개 만점에 4.4개를 받았습니다." role="img">
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="L0jl5e bUWb7c cm4lTe">
-															<div class="vQHuPe bUWb7c D3FNOd"
-																style="width: 40.445849999999965%"></div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="zYPPle">
-												<div jsname="zVnJac">
-													<button aria-label="이전 가격: ₹820.00, 현재 할인 가격: ₹720.00"
-														class="svCDYe aYzfud YpSFl  " jscontroller="chfSwc"
-														jsaction="MH7vAb" jsmodel="UfnShf"
-														data-item-id="%.@.&quot;trn57O586Ho.P&quot;,1]"
-														data-require-confirmation-if-single-offer="true"
-														jslog="36906; 1:200|CAIaLgoVEhMKDXRybjU3TzU4NkhvLlAQBhgEEAEyEwjinObz++HuAhWap5YKHVH0AdOqAjAaLggBEhUKEwoNdHJuNTdPNTg2SG8uUBAGGARKEwjinObz++HuAhWap5YKHVH0AdM=; track:click,impression">
-														<div class="LCATme">
-															<span class="SUZt4c djCuy"><span>₹820.00</span></span><span
-																class="VfPpfd ZdBevf i5DZme"><span>₹720.00</span></span>
-														</div>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<c-data id="c416"
-					jsdata=" UbHxed;_;$809 OhlBSe;trn57O586Ho.P,1;$812 QwEV2c;trn57O586Ho.P,1;$811"></c-data></c-wiz>
-			</div>
-			<div class="WHE7ib mpg5gc">
-				<c-wiz jsrenderer="PAQZbb" jsshadow="" jsdata="deferred-c540"
-					data-p="%.@.true]" jscontroller="JpEzfb" jsaction="aM6rcc:MRWqkd"
-					data-node-index="1;1" autoupdate="" jsmodel="hc6Ubd">
-				<div
-					class="uMConb  V2Vq5e POHYmb-T8c9cb YEDFMc-T8c9cb y1APZe-T8c9cb q9QOMe"
-					jslog="38003; 1:500|CAIaLAoTEhEKCzhrdzg1SjF3YzFVEAYYBBABMhMI7vz08fvh7gIVRi2WCh2wdQWMqgIuGiwIARITChEKCzhrdzg1SjF3YzFVEAYYBEoTCO789PH74e4CFUYtlgodsHUFjA==; track:click,impression">
-					<div class="Vpfmgd">
-						<div class="uzcko">
-							<div class="N9c7d eJxoSc">
-								<span class="yNWQ8e K3IMke " style="height: 230px; width: 160px"><img
-									data-src="https://play-lh.googleusercontent.com/Vre7p41My8dOIv3TjmaSCftI48C7txUthGTbhDwccikacng6TdUGwUzbIgmNp69OhlxR=w160-h230-rw"
-									data-ils="3" jsaction="rcuQ6b:trigger.M8vzZb;"
-									data-srcset="https://play-lh.googleusercontent.com/Vre7p41My8dOIv3TjmaSCftI48C7txUthGTbhDwccikacng6TdUGwUzbIgmNp69OhlxR=w320-h460-rw 2x"
-									class="T75of QNCnCf" aria-hidden="true"
-									style="max-height: 230px; max-width: 160px; height: 230px"></span><span
-									class="ZYyTud K3IMke " style="height: 230px; width: 160px"><img
-									data-ils="3" jsaction="rcuQ6b:trigger.M8vzZb;"
-									class="T75of QNCnCf" aria-hidden="true"
-									style="max-height: 230px; max-width: 160px; height: 230px"
-									srcset="https://play-lh.googleusercontent.com/Vre7p41My8dOIv3TjmaSCftI48C7txUthGTbhDwccikacng6TdUGwUzbIgmNp69OhlxR=w320-h460-rw 2x"
-									src="https://play-lh.googleusercontent.com/Vre7p41My8dOIv3TjmaSCftI48C7txUthGTbhDwccikacng6TdUGwUzbIgmNp69OhlxR=w160-h230-rw"></span><span
-									class="kJ9uy K3IMke " style="height: 230px; width: 160px"><img
-									data-src="https://play-lh.googleusercontent.com/Vre7p41My8dOIv3TjmaSCftI48C7txUthGTbhDwccikacng6TdUGwUzbIgmNp69OhlxR=w160-h230-rw"
-									data-ils="3" jsaction="rcuQ6b:trigger.M8vzZb;"
-									data-srcset="https://play-lh.googleusercontent.com/Vre7p41My8dOIv3TjmaSCftI48C7txUthGTbhDwccikacng6TdUGwUzbIgmNp69OhlxR=w320-h460-rw 2x"
-									class="T75of QNCnCf" aria-hidden="true"
-									style="max-height: 230px; max-width: 160px; height: 230px"></span>
-								<div class="wXUyZd">
-									<button aria-label="Spider-Man: Far from Home 재생"
-										class="MMZjL sgOwM  " jscontroller="HnDLGf"
-										jsaction="click:axChxd" jsname="pWHZ7d"
-										data-should-show-kav="true"
-										data-trailer-url="https://play.google.com/video/lava/web/player/yt:movie:pW3cU6EgGWA?autoplay=1&amp;authuser=0&amp;embed=play"
-										data-web-presentation="1" data-item-id="8kw85J1wc1U"
-										data-item-type="1"></button>
-								</div>
-							</div>
-						</div>
-						<div class="RZEgze">
-							<div class="vU6FJ p63iDd">
-								<a
-									href="/store/movies/details/Spider_Man_Far_from_Home?id=8kw85J1wc1U"
-									aria-hidden="true" tabindex="-1" class="JC71ub"></a>
-								<div class="k6AFYd">
-									<div class="bQVA0c">
-										<div class="PODJt">
-											<div class="kCSSQe">
-												<div class="b8cIId ReQCgd Q9MA7b">
-													<a
-														href="/store/movies/details/Spider_Man_Far_from_Home?id=8kw85J1wc1U"><div
-															class="WsMG1c nnK0zc" title="Spider-Man: Far from Home">Spider-Man:
-															Far from Home</div></a>
-													<div class="cqtbn"></div>
-												</div>
-												<div>영어 오디오</div>
-												<div class="b8cIId f5NCO">
-													<a
-														href="/store/movies/details/Spider_Man_Far_from_Home?id=8kw85J1wc1U">Following
-														the events of Avengers: Endgame, Peter Parker (Tom
-														Holland) returns in Spider-Man: Far From Home. Our
-														friendly neighborhood Super Hero decides to join his best
-														friends Ned, MJ, and the rest of the gang on a European
-														vacation. However, Peter’s plan to leave super heroics
-														behind for a few weeks is quickly scrapped when he
-														begrudgingly agrees to help Nick Fury (Samuel L. Jackson)
-														uncover the mystery of several elemental creature attacks.
-														Spider-Man and Mysterio (Jake Gyllenhaal) join forces to
-														fight the havoc unleashed across the continent but all is
-														not as it seems.</a>
-													<div class="cqtbn xKFUib"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="Z2nl8b">
-										<div class="PODJt">
-											<div class="kCSSQe">
-												<div class="pf5lIe">
-													<div aria-label="별표 5개 만점에 4.3개를 받았습니다." role="img">
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="vQHuPe bUWb7c"></div>
-														<div class="L0jl5e bUWb7c cm4lTe">
-															<div class="vQHuPe bUWb7c D3FNOd"
-																style="width: 31.931400000000032%"></div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="zYPPle">
-												<div jsname="zVnJac">
-													<button class="svCDYe aYzfud YpSFl  " jscontroller="chfSwc"
-														jsaction="MH7vAb" jsmodel="UfnShf"
-														data-item-id="%.@.&quot;8kw85J1wc1U&quot;,1]"
-														data-require-confirmation-if-single-offer="true"
-														jslog="36906; 1:200|CAIaLAoTEhEKCzhrdzg1SjF3YzFVEAYYBBABMhMI7vz08fvh7gIVRi2WCh2wdQWMqgIuGiwIARITChEKCzhrdzg1SjF3YzFVEAYYBEoTCO789PH74e4CFUYtlgodsHUFjA==; track:click,impression">
-														<div class="LCATme">
-															<span class="VfPpfd ZdBevf i5DZme"><span>₹80.00</span></span>
-														</div>
-													</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<c-data id="c540"
-					jsdata=" UbHxed;_;$1045 OhlBSe;8kw85J1wc1U,1;$1048 QwEV2c;8kw85J1wc1U,1;$1047"></c-data></c-wiz>
-			</div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
 		</div>
 	</div>
 </body>
