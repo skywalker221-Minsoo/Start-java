@@ -1,13 +1,13 @@
-
-<%@ page import="DB.MovieDB"%>
-<%@ page import="DB.MovieVO"%>
-
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
+<%
+	//HttpServletRequest request2 = new HttpServletRequest();
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,40 +37,30 @@
 						<ul class="lst_detail_t1">
 							<li>
 								<div class="thumb">
-									<a href="/movie/bi/mi/basic.nhn?code=196375">
+									<a href="specific9.jsp">
 									<img src="https://movie-phinf.pstatic.net/20210125_20/1611551696077lGGQ8_JPEG/movie_image.jpg?type=m99_141_2"
 										alt="해변의 에트랑제"></a>
 								</div>
 								<dl class="lst_dsc">
 									<dt class="tit">
-										<span class="ico_rating_15">15세 관람가</span>
-										<a href="/movie/bi/mi/basic.nhn?code=196375">해변의 에트랑제</a>
+										<span class="ico_rating_15">해변의 에트랑제</span>
 									</dt>
 									<dd>
 										<dl class="info_txt1">
+											<span class="ico_rating_15">15세 관람가</span>
 											<dt class="tit_t1">평점 | 
-												<a href="/movie/bi/mi/point.nhn?code=196375#pointAfterTab">
 												<span class="st_off"><span class="st_on" style="width: 94.1%"></span></span>
-												<span class="num">9.41</span></a>
+												<span class="num">9.41</span>
 											</dt>
 											<dt class="tit_t2">개요 | 
-												<span class="link_txt">
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=15">애니메이션</a> <!-- N=a:nol.genre,r:1 -->,
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=5">멜로/로맨스</a></span>
+												<span class="link_txt">애니메이션, 멜로, 로맨스
 												<span class="split">|</span> 59분 <span class="split">|</span> 2021.02.18 개봉
 											</dt>
 											<dt class="tit_t3">감독 | 
-												<span class="link_txt">
-												<a href="/movie/bi/pi/basic.nhn?code=441157">오오하시 아키요</a> <!-- N=a:nol.director,r:1 -->
-												</span>
+												<span class="link_txt">오오하시 아키요</span>
 											</dt>
 											<dt class="tit_t4">출연 | 
-												<span class="link_txt">
-													<a href="/movie/bi/pi/basic.nhn?code=347186">무라타 타이시</a><!-- N=a:nol.actor,r:1 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=285287">마츠오카 요시츠구</a><!-- N=a:nol.actor,r:2 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=358304">시마무라 유우</a><!-- N=a:nol.actor,r:3 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=287974">이토 카나에</a><!-- N=a:nol.actor,r:4 -->
-												</span>
+												<span class="link_txt">무라타 타이시, 마츠오카 요시츠구, 시마무라 유우, 이토 카나에</span>
 											</dt>
 										</dl>
 									</dd>

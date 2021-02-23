@@ -1,13 +1,13 @@
-
-<%@ page import="DB.MovieDB"%>
-<%@ page import="DB.MovieVO"%>
-
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
+<%
+	//HttpServletRequest request2 = new HttpServletRequest();
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,37 +37,30 @@
 						<ul class="lst_detail_t1">
 							<li>
 								<div class="thumb">
-									<a href="/movie/bi/mi/basic.nhn?code=193328">
+									<a href="specific5.jsp">
 									<img src="https://movie-phinf.pstatic.net/20210114_78/1610588407942CoL2I_JPEG/movie_image.jpg?type=m99_141_2"
 										alt="세자매"></a>
 								</div>
 								<dl class="lst_dsc">
 									<dt class="tit">
-										<span class="ico_rating_15">15세 관람가</span>
-										<a href="/movie/bi/mi/basic.nhn?code=193328">세자매</a><!-- N=a:nol.title,r:5,i:193328 -->
+										<span class="ico_rating_15">세자매</span>
 									</dt>
 									<dd>
 										<dl class="info_txt1">
+											<span class="ico_rating_15">15세 관람가</span>
 											<dt class="tit_t1">평점 | 
-												<a href="/movie/bi/mi/point.nhn?code=193328#pointAfterTab">
-												<span class="st_off"><span class="st_on" style="width: 84.6%"></span></span><span class="num">8.46</span></a>
+												<span class="st_off"><span class="st_on" style="width: 84.6%"></span></span>
+												<span class="num">8.46</span>
 											</dt>
 											<dt class="tit_t2">개요 | 
-												<span class="link_txt">
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=1">드라마</a><!-- N=a:nol.genre,r:1 -->
-												</span> <span class="split">|</span> 115분 <span class="split">|</span> 2021.01.27 개봉
+												<span class="link_txt">드라마</span>
+												<span class="split">|</span> 115분 <span class="split">|</span> 2021.01.27 개봉
 											</dt>
 											<dt class="tit_t3">감독 | 
-												<span class="link_txt">
-												<a href="/movie/bi/pi/basic.nhn?code=60007">이승원</a><!-- N=a:nol.director,r:1 -->
-												</span>
+												<span class="link_txt">이승원</span>
 											</dt>
 											<dt class="tit_t4">출연 | 
-												<span class="link_txt">
-												<a href="/movie/bi/pi/basic.nhn?code=4277">문소리</a><!-- N=a:nol.actor,r:1 -->,
-												<a href="/movie/bi/pi/basic.nhn?code=88002">김선영</a><!-- N=a:nol.actor,r:2 -->,
-												<a href="/movie/bi/pi/basic.nhn?code=246863">장윤주</a><!-- N=a:nol.actor,r:3 -->
-												</span>
+												<span class="link_txt">문소리, 김선영, 장윤주</span>
 											</dt>
 										</dl>
 									</dd>

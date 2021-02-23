@@ -1,13 +1,13 @@
-
-<%@ page import="DB.MovieDB"%>
-<%@ page import="DB.MovieVO"%>
-
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
+<%
+	//HttpServletRequest request2 = new HttpServletRequest();
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,38 +37,30 @@
 						<ul class="lst_detail_t1">
 							<li>
 								<div class="thumb">
-									<a href="/movie/bi/mi/basic.nhn?code=189124">
+									<a href="specific3.jsp">
 									<img src="https://movie-phinf.pstatic.net/20210217_241/1613552832867Ef7Rb_JPEG/movie_image.jpg?type=m99_141_2"
-										alt="미션 파서블"></a><!-- N=a:nol.img,r:3,i:189124 -->
+										alt="미션 파서블"></a>
 								</div>
 								<dl class="lst_dsc">
 									<dt class="tit">
-										<span class="ico_rating_15">15세 관람가</span>
-										<a href="/movie/bi/mi/basic.nhn?code=189124">미션 파서블</a><!-- N=a:nol.title,r:3,i:189124 -->
+										<span class="ico_rating_15">미션 파서블</span>
 									</dt>
 									<dd>
 										<dl class="info_txt1">
+											<span class="ico_rating_15">15세 관람가</span>
 											<dt class="tit_t1">평점 | 
-												<a href="/movie/bi/mi/point.nhn?code=193328#pointAfterTab">
 												<span class="st_off"><span class="st_on" style="width: 81.8%"></span></span>
-												<span class="num">8.18</span></a>
+												<span class="num">8.18</span>
 											</dt>
 											<dt class="tit_t2">개요 | 
-												<span class="link_txt">
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=11">코미디</a><!-- N=a:nol.genre,r:1 -->,
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=19">액션</a><!-- N=a:nol.genre,r:2 -->
-												</span> <span class="split">|</span> 105분 <span class="split">|</span> 2021.02.17 개봉
+												<span class="link_txt">코미디, 액션</span>
+												<span class="split">|</span> 105분 <span class="split">|</span> 2021.02.17 개봉
 											</dt>
 											<dt class="tit_t3">감독 | 
-												<span class="link_txt">
-												<a href="/movie/bi/pi/basic.nhn?code=432472">김형주</a><!-- N=a:nol.director,r:1 -->
-												</span>
+												<span class="link_txt">김형주</span>
 											</dt>
 											<dt class="tit_t4">출연 | 
-												<span class="link_txt"> <a
-													href="/movie/bi/pi/basic.nhn?code=76474">김영광</a><!-- N=a:nol.actor,r:1 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=378097">이선빈</a><!-- N=a:nol.actor,r:2 -->
-												</span>
+												<span class="link_txt">김영광, 이선빈</span>
 											</dt>
 										</dl>
 									</dd>

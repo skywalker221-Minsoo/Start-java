@@ -1,13 +1,13 @@
-
-<%@ page import="DB.MovieDB"%>
-<%@ page import="DB.MovieVO"%>
-
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
+<%
+	//HttpServletRequest request2 = new HttpServletRequest();
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,41 +38,34 @@
 						
 							<li>
 								<div class="thumb">
-									<a href="/movie/bi/mi/basic.nhn?code=184517"><!-- 상세페이지 소환!! 이미지 클릭 가능하게 해준다. -->
 									<img src="https://movie-phinf.pstatic.net/20210107_160/1609984702837oNdmw_JPEG/movie_image.jpg?type=m99_141_2"
-										alt="소울"></a><!-- N=a:nol.img,r:1,i:184517 -->
+										alt="소울">
 								</div>
 								<dl class="lst_dsc">
-									<dt class="tit">
-										<span class="ico_rating_all">전체 관람가</span>
-										<a href="/movie/bi/mi/basic.nhn?code=184517">소울</a><!-- N=a:nol.title,r:1,i:184517 -->
-									</dt>
-									<dd>
-										<dl class="info_txt1">
-											<dt class="tit_t1">평점 |
-												<a href="/movie/bi/mi/point.nhn?code=193328#pointAfterTab">
-												<span class="st_off"><span class="st_on" style="width: 93.3%"></span></span>
-												<span class="num">9.33</span></a>
-											</dt>	
-											<dt class="tit_t2">개요 |
-												<span class="link_txt">
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=15">애니메이션</a><!-- N=a:nol.genre,r:1 -->
-												</span> <span class="split">|</span> 107분 <span class="split">|</span> 2021.01.20 개봉
-											</dt>
-											<dt class="tit_t3">감독 |
-												<span class="link_txt">
-												<a href="https://people.search.naver.com/search.naver?where=nexearch&query=%ED%94%BC%ED%8A%B8%20%EB%8B%A5%ED%84%B0&sm=tab_etc&ie=utf8&key=PeopleService&os=550912">피트 닥터</a> <!-- N=a:nol.director,r:1 -->
-												</span>
-											</dt>
-											<dt class="tit_t4">출연 |
-												<span class="link_txt">
-													<a href="/movie/bi/pi/basic.nhn?code=641">제이미 폭스</a><!-- N=a:nol.actor,r:1 -->, <!-- 페이지 링크!! -->
-													<a href="/movie/bi/pi/basic.nhn?code=45584">티나 페이</a><!-- N=a:nol.actor,r:2 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=390060">다비드 딕스</a><!-- N=a:nol.actor,r:3 -->
-												</span>
-											</dt>
-										</dl>
-									</dd>
+									<dl class="lst_dsc">
+										<dt class="tit">
+											<span class="ico_rating_all">소울 </span>
+										</dt>
+										<dd>
+											<dl class="info_txt1">
+												<span class = ico_rating_all>전체 관람가</span>
+												<dt class="tit_t1">평점 | 
+													<span class="st_off"><span class="st_on" style="width: 93.3%"></span></span>
+													<span class="num">9.33</span>
+												</dt>
+												<dt class="tit_t2">개요 | 
+													<span class="link_txt">애니메이션</span>
+													<span class="split">|</span>107분 <span class="split">|</span> 2021.01.20 개봉
+												</dt>
+												<dt class="tit_t3">감독 | 
+													<span class="link_txt">피트 닥터</span>
+												</dt>
+												<dt class="tit_t4">출연 | 
+													<span class="link_txt">제이미 폭스, 티나 페이, 다비드 딕스</span>
+												</dt>
+											</dl>
+										</dd>
+									</dl>
 									<dd class="info_t5">
 										<div class="btn_area">
 											<iframe width="560" height="315" src="https://www.youtube.com/embed/Q0zFPlArth0" frameborder="0" 

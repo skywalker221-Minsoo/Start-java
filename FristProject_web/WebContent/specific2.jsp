@@ -1,13 +1,13 @@
-
-<%@ page import="DB.MovieDB"%>
-<%@ page import="DB.MovieVO"%>
-
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
+<%
+	//HttpServletRequest request2 = new HttpServletRequest();
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,40 +37,30 @@
 						<ul class="lst_detail_t1">
 							<li>
 								<div class="thumb">
-								<a href="/movie/bi/mi/basic.nhn?code=196051">
-								<img src="https://movie-phinf.pstatic.net/20210126_174/1611638248803840HH_JPEG/movie_image.jpg?type=m99_141_2"
-									alt="극장판 귀멸의 칼날: 무한열차편"></a><!-- N=a:nol.img,r:2,i:196051 -->
+									<a href="specific2.jsp">
+									<img src="https://movie-phinf.pstatic.net/20210126_174/1611638248803840HH_JPEG/movie_image.jpg?type=m99_141_2"
+										alt="극장판 귀멸의 칼날: 무한열차편"></a>
 								</div>
 								<dl class="lst_dsc">
 									<dt class="tit">
-										<span class="ico_rating_15">15세 관람가</span>
-										<a href="/movie/bi/mi/basic.nhn?code=196051">극장판 귀멸의 칼날 : 무한열차편</a><!-- N=a:nol.title,r:2,i:196051 -->
+										<span class="ico_rating_all">극장판 귀멸의 칼날 : 무한열차편 </span>
 									</dt>
-									<dd class="star">
-
-									</dd>
 									<dd>
 										<dl class="info_txt1">
+											<span class = ico_rating_all>15세 관람가</span>
 											<dt class="tit_t1">평점 | 
-												<a href="/movie/bi/mi/point.nhn?code=193328#pointAfterTab">
 												<span class="st_off"><span class="st_on" style="width: 92.2%"></span></span>
-												<span class="num">9.22</span></a><!-- N=a:nol.urating -->
+												<span class="num">9.22</span>
 											</dt>
 											<dt class="tit_t2">개요 | 
-												<span class="link_txt">
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=15">애니메이션</a><!-- N=a:nol.genre,r:1 -->
-												</span> <span class="split">|</span> 117분 <span class="split">|</span> 2021.01.27 개봉
+												<span class="link_txt">애니메이션</span>
+												<span class="split">|</span> 117분 <span class="split">|</span> 2021.01.27 개봉
 											</dt>
 											<dt class="tit_t3">감독 | 
-												<span class="link_txt">
-												<a href="/movie/bi/pi/basic.nhn?code=440907">소토자키 하루오</a><!-- N=a:nol.director,r:1 -->
-												</span>
+												<span class="link_txt">소토자키 하루오</span>
 											</dt>
 											<dt class="tit_t4">출연 | 
-												<span class="link_txt">
-												<a href="/movie/bi/pi/basic.nhn?code=337130">하나에 나츠키</a><!-- N=a:nol.actor,r:1 -->,
-												<a href="/movie/bi/pi/basic.nhn?code=443979">키토 아카리</a><!-- N=a:nol.actor,r:2 -->
-												</span>
+												<span class="link_txt">하나에 나츠키, 키토 아카리</span>
 											</dt>
 										</dl>
 									</dd>

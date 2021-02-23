@@ -1,13 +1,13 @@
-
-<%@ page import="DB.MovieDB"%>
-<%@ page import="DB.MovieVO"%>
-
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
+<%
+	//HttpServletRequest request2 = new HttpServletRequest();
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,38 +37,30 @@
 						<ul class="lst_detail_t1">
 							<li>
 								<div class="thumb">
-									<a href="/movie/bi/mi/basic.nhn?code=196361">
+									<a href="specific6.jsp">
 									<img src="https://movie-phinf.pstatic.net/20210201_280/16121642953139VXAE_JPEG/movie_image.jpg?type=m99_141_2"
 										alt="더블패티"></a>
 								</div>
 								<dl class="lst_dsc">
 									<dt class="tit">
-										<span class="ico_rating_15">15세 관람가</span>
-											<a href="/movie/bi/mi/basic.nhn?code=196361">더블패티</a>
+										<span class="ico_rating_15">더블패티</span>
 									</dt>
 									<dd>
 										<dl class="info_txt1">
+											<span class="ico_rating_15">15세 관람가</span>
 											<dt class="tit_t1">평점 | 
-												<a href="/movie/bi/mi/point.nhn?code=196361#pointAfterTab">
 												<span class="st_off"><span class="st_on" style="width: 75.4%"></span></span>
-												<span class="num">7.54</span></a>
+												<span class="num">7.54</span>
 											</dt>
-											<dt class="tit_t1">개요 | 
-												<span class="link_txt">
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=1">드라마</a><!-- N=a:nol.genre,r:1 -->
-												</span> <span class="split">|</span> 107분 <span class="split">|</span> 2021.02.17 개봉
+											<dt class="tit_t2">개요 | 
+												<span class="link_txt">드라마</span>
+												<span class="split">|</span> 107분 <span class="split">|</span> 2021.02.17 개봉
 											</dt>
-											<dt class="tit_t2">감독 | 
-												<span class="link_txt">
-												<a href="/movie/bi/pi/basic.nhn?code=164380">백승환</a><!-- N=a:nol.director,r:1 -->
-												</span>
+											<dt class="tit_t3">감독 | 
+												<span class="link_txt">백승환</span>
 											</dt>
-											<dt class="tit_t3">출연 | 
-												<span class="link_txt">
-													<a href="/movie/bi/pi/basic.nhn?code=441041">신승호</a><!-- N=a:nol.actor,r:1 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=393676">아이린</a><!-- N=a:nol.actor,r:2 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=154985">송지인</a><!-- N=a:nol.actor,r:3 -->
-												</span>
+											<dt class="tit_t4">출연 | 
+												<span class="link_txt">신승호, 아이린, 송지인</span>
 											</dt>
 										</dl>
 									</dd>

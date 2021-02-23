@@ -26,7 +26,6 @@ public class MovieDB {
 		ps.setString(8, bag.getRank());
 		
 		ps.executeUpdate();
-		System.out.println(" mySQL서버로 전송 완료. <br>");
 	}
 
 	public MovieVO read(String title) throws Exception {
@@ -41,7 +40,6 @@ public class MovieDB {
 		ps.setString(1, title);
 		
 		ResultSet rs = ps.executeQuery();
-		System.out.println("4. SQL문 mySQL서버로 전송 성공. <br>");
 		
 		MovieVO bag = new MovieVO();
 		if (rs.next()) {
@@ -63,7 +61,6 @@ public class MovieDB {
 			bag.setVideo(video);
 			bag.setStory(story);
 			bag.setRank(rank);
-			
 		}
 		return bag;
 	}
@@ -93,6 +90,7 @@ public class MovieDB {
 	}
 
 	public void delete(String id) throws Exception {
+		
 		Class.forName("com.mysql.jdbc.Driver");
 
 		String url = "jdbc:mysql://localhost:3306/movie";
@@ -105,6 +103,4 @@ public class MovieDB {
 
 		ps.executeUpdate();
 	}
-
-
 }

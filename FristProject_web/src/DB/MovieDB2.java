@@ -21,7 +21,7 @@ public class MovieDB2 {
 		PreparedStatement ps = con.prepareStatement(sql);		
 		
 		ResultSet rs = ps.executeQuery();
-		System.out.println("4. SQL¹® mySQL¼­¹ö·Î Àü¼Û ¼º°ø. <br>");
+		System.out.println("4. SQLï¿½ï¿½ mySQLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. <br>");
 		
 		while (rs.next()) {
 			

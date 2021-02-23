@@ -1,13 +1,13 @@
-
-<%@ page import="DB.MovieDB"%>
-<%@ page import="DB.MovieVO"%>
-
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
+<%
+	//HttpServletRequest request2 = new HttpServletRequest();
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,44 +37,30 @@
 						<ul class="lst_detail_t1">
 							<li>
 								<div class="thumb">
-									<a href="/movie/bi/mi/basic.nhn?code=190382">
+									<a href="specific4.jsp">
 									<img src="https://movie-phinf.pstatic.net/20210217_105/1613522931191Xy0ke_JPEG/movie_image.jpg?type=m99_141_2"
 										alt="새해전야"></a>
 								</div>
 								<dl class="lst_dsc">
 									<dt class="tit">
-										<span class="ico_rating_12">12세 관람가</span>
-										<a href="/movie/bi/mi/basic.nhn?code=190382">새해전야</a>
+										<span class="ico_rating_12">새해전야</span>
 									</dt>
 									<dd>
 										<dl class="info_txt1">
+											<span class="ico_rating_12">12세 관람가</span>
 											<dt class="tit_t1">평점 | 
-												<a href="/movie/bi/mi/point.nhn?code=193328#pointAfterTab">
 												<span class="st_off"><span class="st_on" style="width: 71.7%"></span></span>
-												<span class="num">7.17</span></a>
+												<span class="num">7.17</span>
 											</dt>
-											<dt class="tit_t1">개요 | 
-												<span class="link_txt">
-												<a href="/movie/sdb/browsing/bmovie.nhn?genre=5">멜로/로맨스</a></span>
+											<dt class="tit_t2">개요 | 
+												<span class="link_txt">멜로, 로맨스</span>
 												<span class="split">|</span> 114분 <span class="split">|</span> 2021.02.10 개봉
 											</dt>
-											<dt class="tit_t2">감독 | 
-												<span class="link_txt">
-												<a href="/movie/bi/pi/basic.nhn?code=3937">홍지영</a><!-- N=a:nol.director,r:1 -->
-												</span>
+											<dt class="tit_t3">감독 | 
+												<span class="link_txt">홍지영</span>
 											</dt>
-											<dt class="tit_t3">출연 | 
-												<span class="link_txt">
-													<a href="/movie/bi/pi/basic.nhn?code=30763">김강우</a><!-- N=a:nol.actor,r:1 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=107804">유인나</a><!-- N=a:nol.actor,r:2 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=157303">유연석</a><!-- N=a:nol.actor,r:3 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=53812">이연희</a><!-- N=a:nol.actor,r:4 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=338646">이동휘</a><!-- N=a:nol.actor,r:5 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=369307">천두링</a><!-- N=a:nol.actor,r:6 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=43815">염혜란</a><!-- N=a:nol.actor,r:7 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=139633">수영</a><!-- N=a:nol.actor,r:8 -->,
-													<a href="/movie/bi/pi/basic.nhn?code=175928">유태오</a><!-- N=a:nol.actor,r:9 -->
-												</span>
+											<dt class="tit_t4">출연 | 
+												<span class="link_txt">김강우, 유인나, 유연석, 이연희, 이동휘, 천두링, 염혜란, 수영, 유태오</span>
 											</dt>
 										</dl>
 									</dd>

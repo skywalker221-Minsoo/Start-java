@@ -1,39 +1,36 @@
-
+<%@ page import="DB.MemberVO"%>
+<%@ page import="DB.MemberDB"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+    
 <%
-	String id = request.getParameter("id");
+session.getAttribute("id");
+String id = (String)session.getAttribute("id");
 %>
 <style>
 li {
-	margin: 5px 10px 0 0; /* 위 오른쪽 아래 왼쪽 */
-	padding: 0px;
+	margin: 5px 10px 0 -30px; /* 위 오른쪽 아래 왼쪽 */
+	padding: 5px;
 	list-style: none;
 	float: left; 
-	font-size: 20px;
-	/* background : pink; */
+	font-size: 17px;
 }
 
-a {
-	font-size: 15px;
-	padding: 1px;
-	margin: 0 0 0 -10px;
+#li {
+	font-size: 25px;
+	margin-right: 10px;
 }
 </style>
 </head>
 <ul><!-- unordered list -->
-	<li><%= id%> 님<br> <!-- a href 안붙어 있으면 li가 관여  -->
+	<li><%= id %>님<br>
 		환영합니다.</li>    
 </ul>
 <ul><!-- unordered list -->
-	<li><a href="login.jsp">로그아웃</a></li>  <!-- 여긴 스타일 a 가 관여  -->
-	<li><a href="modify.jsp">개인정보수정</a></li>
-	<li><a href="pay.jsp">결재수단</a></li>
-	<li><a href="pay.jsp">개인함</a></li>
-	<li><a href="pay.jsp">회원탈퇴</a></li>
+	<li><a href="logout.jsp">로그아웃</a></li> 
+	<li><a href="update.jsp">개인정보수정</a></li>
+	<li><a href="delete.jsp">회원탈퇴</a></li>
 	<li>고객센터</li>
-	<li><a href="QandA.jsp">자주묻는 질문</a></li>
-	<li><a href="question.jsp">문의 게시판</a></li>
-	<li><a href="news.jsp">공지/뉴스</a></li>
+	<li><a href="QnAmain.jsp">자주묻는 질문</a></li>
+	<li><a href="emailcreate.jsp">문의 게시판</a></li>
 </ul>

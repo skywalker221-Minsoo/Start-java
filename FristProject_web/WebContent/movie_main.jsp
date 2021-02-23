@@ -1,13 +1,12 @@
-<%@ page import="DB.MovieDB"%>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
 <%
 	//HttpServletRequest request2 = new HttpServletRequest();
-	String id = request.getParameter("id");
-	String pw = request.getParameter("pw");
-	String genre = request.getParameter("genre");
-	
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
 %>
 
 <!DOCTYPE html>
@@ -51,7 +50,7 @@
 										</dt>
 										<dd>
 											<dl class="info_txt1">
-												<span class = ico_rating_all>15세 관람가</span>
+												<span class = ico_rating_all>전체 관람가</span>
 												<dt class="tit_t1">평점 | 
 													<span class="st_off"><span class="st_on" style="width: 93.3%"></span></span>
 													<span class="num">9.33</span>
@@ -70,7 +69,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=184517" class="btn_rsv">결재하기</a><!-- 결재페이지 소환!! --><!-- N=a:nol.ticket,r:1,i:184517 -->
+												<a href="pay.jsp" class="btn_rsv">결재하기</a><!-- 결재페이지 소환!! --><!-- N=a:nol.ticket,r:1,i:184517 -->
 											</div>
 											<div class="btn_t1">    
 												<a href="specific1.jsp" class="item2">예고편</a> <!-- N=a:nol.trailer,r:1,i:184517 -->
@@ -110,7 +109,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=196051" class="btn_rsv">결재하기</a><!-- N=a:nol.ticket,r:2,i:196051 -->
+												<a href="pay.jsp" class="btn_rsv">결재하기</a><!-- N=a:nol.ticket,r:2,i:196051 -->
 											</div>
 											<div class="btn_t1">
 												<a href="specific2.jsp" class="item2">예고편</a> <!-- N=a:nol.trailer,r:2,i:196051 -->
@@ -151,7 +150,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=189124" class="btn_rsv">결재하기</a><!-- N=a:nol.ticket,r:3,i:189124 -->
+												<a href="pay.jsp" class="btn_rsv">결재하기</a><!-- N=a:nol.ticket,r:3,i:189124 -->
 											</div>
 											<div class="btn_t1">
 												<a href="specific3.jsp" class="item2">예고편</a><!-- N=a:nol.trailer,r:3,i:189124 -->
@@ -191,7 +190,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=190382" class="btn_rsv">결재하기</a>
+												<a href="pay.jsp" class="btn_rsv">결재하기</a>
 											</div>
 											<div class="btn_t1">
 													<a href="specific4.jsp" class="item2">예고편</a>
@@ -231,7 +230,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=193328" class="btn_rsv">결재하기</a>
+												<a href="pay.jsp" class="btn_rsv">결재하기</a>
 											</div>
 											<div class="btn_t1">
 												<a href="specific5.jsp" class="item2">예고편</a><!-- N=a:nol.trailer,r:5,i:193328 -->
@@ -271,7 +270,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=196361" class="btn_rsv">결재하기</a>
+												<a href="pay.jsp" class="btn_rsv">결재하기</a>
 											</div>
 											<div class="btn_t1">
 												<a href="specific6.jsp" class="item2">예고편</a> <!-- N=a:nol.trailer,r:6,i:196361 -->
@@ -311,7 +310,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=37883" class="btn_rsv">결재하기</a>
+												<a href="pay.jsp" class="btn_rsv">결재하기</a>
 											</div>
 											<div class="btn_t1">
 												<a href="specific7.jsp" class="item2">예고편</a> <!-- N=a:nol.trailer,r:7,i:37883 -->
@@ -351,7 +350,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=19335" class="btn_rsv">결재하기</a>
+												<a href="pay.jsp" class="btn_rsv">결재하기</a>
 											</div>
 											<div class="btn_t1">
 												<a href="specific8.jsp" class="item2">예고편</a>
@@ -391,7 +390,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=196375" class="btn_rsv">결재하기</a>
+												<a href="pay.jsp" class="btn_rsv">결재하기</a>
 											</div>
 											<div class="btn_t1">
 												<a href="specific9.jsp" class="item2">예고편</a><!-- N=a:nol.trailer,r:9,i:196375 -->
@@ -432,7 +431,7 @@
 										</dd>
 										<dd class="info_t1">
 											<div class="btn_area">
-												<a href="/movie/bi/mi/reserve.nhn?code=196375" class="btn_rsv">결재하기</a>
+												<a href="pay.jsp" class="btn_rsv">결재하기</a>
 											</div>
 											<div class="btn_t1">
 												<a href="specific10.jsp" class="item2">예고편</a><!-- N=a:nol.trailer,r:9,i:196375 -->

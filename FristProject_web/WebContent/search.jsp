@@ -10,6 +10,10 @@
 
     <%
             String title = request.getParameter("title");
+	//HttpServletRequest request2 = new HttpServletRequest();
+			String id = request.getParameter("id");
+			String pw = request.getParameter("pw");
+	
 
             MovieDB db = new MovieDB();
             MovieVO bag = db.read(title);

@@ -1,13 +1,13 @@
-
-<%@ page import="DB.MovieDB"%>
-<%@ page import="DB.MovieVO"%>
-
-<%@ page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection"%>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="DB.MemberDB"%>
+<%@ page import="DB.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
+<%
+	//HttpServletRequest request2 = new HttpServletRequest();
+	session.getAttribute("id");
+	String id = (String)session.getAttribute("id");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,33 +37,30 @@
 						<ul class="lst_detail_t1">
 							<li>
 								<div class="thumb">
-									<a href="/movie/bi/mi/basic.nhn?code=200179">
+									<a href="specific10.jsp">
 									<img src="https://movie-phinf.pstatic.net/20210107_98/1610010371111nd2e9_JPEG/movie_image.jpg?type=m99_141_2"
 										alt="드림빌더"></a>
 								</div>
 								<dl class="lst_dsc">
 									<dt class="tit">
-										<span class="ico_rating_all">전체 관람가</span>
-										<a href="/movie/bi/mi/basic.nhn?code=200179">드림빌더</a>
+										<span class="ico_rating_all">드림빌더</span>
 									</dt>
 									<dd>
 										<dl class="info_txt1">
+											<span class="ico_rating_all">전체 관람가</span>
 											<dt class="tit_t1">평점 | 
-												<a href="/movie/bi/mi/point.nhn?code=200179#pointAfterTab">
-													<span class="st_off"><span class="st_on" style="width: 86.7%"></span></span>
-													<span class="num">8.67</span></a>
+												<span class="st_off"><span class="st_on" style="width: 86.7%"></span></span>
+												<span class="num">8.67</span>
 											</dt>
 											<dt class="tit_t2">개요 | 
-												<span class="link_txt">
-													<a href="/movie/sdb/browsing/bmovie.nhn?genre=15">애니메이션</a><!-- N=a:nol.genre,r:1 -->,
-													<a href="/movie/sdb/browsing/bmovie.nhn?genre=6">모험</a><!-- N=a:nol.genre,r:2 -->,
-													<a href="/movie/sdb/browsing/bmovie.nhn?genre=12">가족</a><!-- N=a:nol.genre,r:3 -->,
-													<a href="/movie/sdb/browsing/bmovie.nhn?genre=2">판타지</a><!-- N=a:nol.genre,r:4 -->
-												</span> <span class="split">|</span> 80분 <span class="split">|</span> 2021.02.10 개봉
+												<span class="link_txt">애니메이션, 모험, 가족, 판타지</span>
+												<span class="split">|</span> 80분 <span class="split">|</span> 2021.02.10 개봉
 											</dt>
 											<dt class="tit_t3">감독 | 
+												<span class="link_txt">킴 하겐 젠슨</span>
+											</dt>
+											<dt class="tit_t4">출연 | 
 												<span class="link_txt">
-													<a href="/movie/bi/pi/basic.nhn?code=445055">킴 하겐 젠슨</a><!-- N=a:nol.director,r:1 -->
 												</span>
 											</dt>
 										</dl>
