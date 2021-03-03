@@ -19,20 +19,29 @@
     		}
     	%>
 
-				    	
-    
-    
-
-    
-    
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+.center{
+	text-align: center;
+	font-size: 30px;
+}
+
+a {
+	height: 50px;
+	Width: 100px;
+	font-size: 25px;
+
+}
+</style>
 <title>Insert title here</title>
 </head>
 <body>
+<div class="center">
 				두 비밀번호가 일치하지 않습니다.
 				<a href="login.jsp">로그인 페이지로</a>
+</div>
 </body>
 </html>

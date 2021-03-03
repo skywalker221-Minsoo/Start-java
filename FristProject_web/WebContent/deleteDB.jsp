@@ -8,21 +8,34 @@
     pageEncoding="UTF-8"%>
     <%
     	String id = request.getParameter("id");
-    	
-    	 //db전담하는 부품에서 db에 넣어달라고 할 예정.
-    	 MemberDB db = new MemberDB();
-    	 db.delete(id);
+
+    	MemberDB db = new MemberDB();
+    	db.delete(id);
     %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+
+.center{
+	text-align: center;
+	font-size: 30px;
+}
+
+button {
+	height: 50px;
+	Width: 200px;
+	font-size: 25px;
+}
+
+</style>
 <title>Insert title here</title>
 </head>
 <body>
+<div class="center">
 탈퇴가 완료되었습니다.
 <a href="logout.jsp"><button type="button">로그인페이지로</button></a>&nbsp;&nbsp;
-       
-     
+</div>       
 </body>
 </html>

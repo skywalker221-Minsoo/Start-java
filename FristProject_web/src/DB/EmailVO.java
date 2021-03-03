@@ -1,13 +1,27 @@
 package DB;
 
 public class EmailVO {
-
+	
+	String id;
+	String name;
 	String tel;
 	String email;
 	String type;
 	String title;
 	String content;
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getTel() {
 		return tel;
 	}
@@ -38,4 +52,5 @@ public class EmailVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	
 }

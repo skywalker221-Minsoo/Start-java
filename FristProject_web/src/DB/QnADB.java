@@ -9,22 +9,22 @@ import java.util.ArrayList;
 public class QnADB {
 
 	public ArrayList<QnAVO> list() throws Exception { 
-
+		
 		ArrayList<QnAVO> list = new ArrayList<>();
 		
 	    Class.forName("com.mysql.jdbc.Driver");
+	    
 
 	    String url = "jdbc:mysql://localhost:3306/movie";
-	    
 	    Connection con = DriverManager.getConnection(url, "root", "1234");
-
+	    
 	    String sql = "select * from qna";
 	    PreparedStatement ps = con.prepareStatement(sql);
-
-	    ResultSet rs = ps.executeQuery();
-
-	    while (rs.next()) {
 	    
+	    ResultSet rs = ps.executeQuery();
+	    
+	    while (rs.next()) {
+
 	    	int no = rs.getInt(1); 
 	    	String type = rs.getString(2); 
 	    	String title = rs.getString(3); 
@@ -44,8 +44,9 @@ public class QnADB {
 	}
 	
 	public void create(QnAVO bag) throws Exception {
+		
 	    Class.forName("com.mysql.jdbc.Driver");
-
+	    
 	    String url = "jdbc:mysql://localhost:3306/movie";
 	    Connection con = DriverManager.getConnection(url, "root", "1234");
 
@@ -54,27 +55,28 @@ public class QnADB {
 	    ps.setString(1, bag.getType());
 	    ps.setString(2, bag.getTitle());
 	    ps.setString(3, bag.getContent());
-
+	    
 	    ps.executeUpdate();
 	}
 	
 	public void delete(int no) throws Exception {
 
 	    Class.forName("com.mysql.jdbc.Driver");
-
+	    
 	    String url = "jdbc:mysql://localhost:3306/movie";
 	    Connection con = DriverManager.getConnection(url, "root", "1234");
-	    
+
 	    String sql = "delete from qna where no = ?";
 	    PreparedStatement ps = con.prepareStatement(sql);
 	    ps.setInt(1, no);
-	    
+
 	    ps.executeUpdate();
 	}
 	
 	public void update(int no) throws Exception {
-		
+
 		Class.forName("com.mysql.jdbc.Driver");
+		//PrintWriter out = new //PrintWriter();
 		
 		String url = "jdbc:mysql://localhost:3306/movie";
 		Connection con = DriverManager.getConnection(url, "root", "1234");
@@ -87,12 +89,12 @@ public class QnADB {
 	}
 	
 	public QnAVO read(int no) throws Exception {
-	    
+	   
 	    Class.forName("com.mysql.jdbc.Driver");
 	    
 	    String url = "jdbc:mysql://localhost:3306/movie";
 	    Connection con = DriverManager.getConnection(url, "root", "1234");
-
+	   
 	    String sql = "select * from qna where no = ?";
 	    PreparedStatement ps = con.prepareStatement(sql);
 	    ps.setInt(1, no);
@@ -100,9 +102,8 @@ public class QnADB {
 	    ResultSet rs = ps.executeQuery();
 
 	    QnAVO bag = new QnAVO();
-	    
 	    if (rs.next()) {
-	    	
+
 	    	int no1 = rs.getInt(1); 
 	    	String type = rs.getString(2); 
 	    	String title = rs.getString(3); 

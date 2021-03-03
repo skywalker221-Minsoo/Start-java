@@ -35,8 +35,6 @@
 		<td><%= bag2.getViews() %></td>
 	</tr>
 	<% } %>
-	
-	</table> 
-	<a href="movie_main.jsp"><button type="button">홈</button></a>&nbsp;&nbsp;
+	<a href="movie_main.jsp"><button>홈</button></a>
 </body>
 </html>

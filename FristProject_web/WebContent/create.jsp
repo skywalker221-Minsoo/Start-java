@@ -5,15 +5,42 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+.center{
+	text-align: center;
+	font-size: 30px;
+}
+
+input {
+	width: 300px;
+	height: 30px;
+	font-size: 30px;
+	margin: 0 0 0 20px;
+}
+
+button {
+	height: 50px;
+	Width: 200px;
+	font-size: 25px;
+}
+
+select {
+	height: 50px;
+	Width: 100px;
+	font-size: 25px;
+
+}
+</style>
 <title>Insert title here</title>
 </head>
 <body>
+<div class="center">
 <h2>회원가입</h2>
 		<hr color="red">
 		 <!--form태그는 값을 입력하고 싶을 때 사용  -->
 		 <!-- 입력값들은 모두 form들어가야 한다.  -->
 		 <!--action: 입력값을 받아서 처리하는 다음페이지를 지정 -->
-		 <form action="db연결.jsp"><!--자바로 서버를 만드는곳  -->
+		 <form action="회원가입DB.jsp"><!--자바로 서버를 만드는곳  -->
 		 아이디: <input name="id"><br><!-- jsp = java server page -->
 		 비밀번호: <input name="pw"><br>
 		 이름: <input name="name"><br>
@@ -41,8 +68,6 @@
 		 <!--네트워크를 위한 것: 랜선, ip, 포트   -->
 		 </form>
        <!-- DB전담, 데이터전달묶는 가방 .java필요, 가방이 많으면 그것보다 큰 묶음-->
-       
-       
-       
+</div>
 </body>
 </html>

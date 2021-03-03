@@ -7,6 +7,11 @@
     pageEncoding="UTF-8"%>
     <%
     	//입력해서 전송된 데이터를 받아야 한다.
+    			
+    			// String id = (String) session.getAttribute("id");
+                String id = request.getParameter("id");
+                // String name = (String) session.getAttribute("name");
+                String name = request.getParameter("name");
                 String tel = request.getParameter("tel");
                 String email = request.getParameter("email");
                 String type = request.getParameter("type");
@@ -16,7 +21,9 @@
                 //1. 가방을 만들어라!
                 EmailVO bag = new EmailVO();
               
-                //2. 가방에 넣어라! => set메서드이용!
+                //2. 가방에 넣어라! => set메서드이용!                		
+                bag.setId(id);
+                bag.setName(name);
                 bag.setTel(tel);
                 bag.setEmail(email);
                 bag.setType(type);
@@ -33,9 +40,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-게시글 등록이 완료되었습니다.
-<hr>
+<body>	
 Tel&nbsp;&nbsp; <%= bag.getTel() %><br><br>
 Email&nbsp;&nbsp; <%= bag.getEmail() %><br><br>
 Type&nbsp;&nbsp; <%= bag.getType() %><br><br>

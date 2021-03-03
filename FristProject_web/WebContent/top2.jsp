@@ -11,12 +11,8 @@ String id = (String)session.getAttribute("id");
 
 <style>
 a {
-	margin: 0 40px 20px 40px; /* 위 오른쪽 아래 왼쪽 */
-	/* 	padding: 5px; */
-	list-style: none;
-	/* float: left; */
+	margin: 0 40px 20px 40px; /* 각 버튼 간격 조정, (위, 오른쪽, 아래, 왼쪽) */
 	font-size: 17px;
-	/* background : pink; */
 }
 </style>
 

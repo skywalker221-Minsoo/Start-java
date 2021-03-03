@@ -1,5 +1,8 @@
-<%@page import="DB.PurchaseVO"%>
-<%@page import="DB.PurchaseDAO"%>
+<%@page import="DB.MovieVO"%>
+<%@page import="DB.MovieDB"%>
+<%@page import="DB.MemberVO"%>
+<%@page import="DB.MemberDB"%>
+
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.DriverManager"%>
@@ -7,13 +10,15 @@
 	pageEncoding="UTF-8"%>
 <%
 	//입력해서 전송된 데이터를 받아야 한다.
-session.setAttribute("clientId", "root");
-String clientId = session.getAttribute("clientId") + "";
+	String id = (String)session.getAttribute("id"); //로그인한 세션 id
 
-//db전담하는 부품에서 db에 넣어달라고 할 예정.
-PurchaseDAO db = new PurchaseDAO();
-PurchaseVO bag = db.read(clientId); //
-int money = 10000;
+	String id2 = request.getParameter("id"); //영화에 대한 id
+	//db전담하는 부품에서 db에 넣어달라고 할 예정.
+	MemberDB db = new MemberDB();
+	MemberVO bag = db.read(id);
+	MovieDB db2 = new MovieDB();
+	MovieVO bag2 = db2.read(id2);
+	int money = 10000;
 %>
 <!DOCTYPE html>
 <html>
@@ -31,7 +36,7 @@ function pay() {
 	       pay_method : 'card',
 	       merchant_uid : 'merchant_' + new Date().getTime(),
 	       name : '주문명:결제테스트',
-	       amount : <%= money %>,
+	       amount : <%= bag2.getFee() %>,
 	       buyer_email : 'admin@mega.co.kr' ,
 	       buyer_name : '구매자이름',
 	       buyer_tel : '010-1234-5678',
@@ -81,20 +86,18 @@ td {
 	
 	<table border="1">
 		<tr>
-			<th>구매번호</th>
 			<th>아이디</th>
 			<th>카드사</th>
 			<th>카드번호</th>
 			<th>금액</th>
 			<th>영화</th>
 		</tr>
-		<tr>
-			<td><%=bag.getPerchaseNum()%></td>
-			<td><%=bag.getClientId()%></td>
-			<td><%=bag.getCardCompany()%></td>
-			<td><%=bag.getCardNum()%></td>
-			<td><%=bag.getPrice()%></td>
-			<td><%=bag.getMovieId()%></td>
+		<tr>	
+			<td><%= bag.getId()%></td>
+			<td><%= bag.getCard()%></td>
+			<td><%= bag.getCardnum()%></td>
+			<td><%= bag2.getFee()%></td>
+			<td><%= bag2.getTitle()%></td>
 		</tr>
 	</table>
 
@@ -104,6 +107,7 @@ td {
 
 
 		<button type="button" onclick="pay()">결제하기</button>
+		<a href="movie_main.jsp"><button>홈</button></a>
 
 
 

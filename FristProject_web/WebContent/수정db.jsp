@@ -19,9 +19,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+
+.center{
+	text-align: center;
+	font-size: 30px;
+}
+
+a {
+	height: 50px;
+	Width: 200px;
+	font-size: 25px;
+}
+
+</style>
 <title>Insert title here</title>
 </head>
 <body>
+<div class="center">
 <% if (pw1.equals(pw2)) {
 	bag.setId(id);
 	bag.setPw(pw1);
@@ -39,6 +54,6 @@
 	<a href="movie_main.jsp">메인 페이지로</a>
   <% 	} %>
 	
- 
+</div>
 </body>
 </html>

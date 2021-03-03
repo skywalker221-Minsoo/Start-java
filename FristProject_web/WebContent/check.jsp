@@ -22,12 +22,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+
+.center{
+	text-align: center;
+	font-size: 30px;
+}
+
+a {
+	height: 50px;
+	Width: 200px;
+	font-size: 25px;
+}
+
+</style>
 <title>Insert title here</title>
 </head>
 <body>
+<div class="center">
 로그인 결과는 <%= result %><br>
 <a href="login.jsp">로그인 페이지로</a>
 
-
+</div>
 </body>
 </html>

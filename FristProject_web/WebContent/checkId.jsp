@@ -23,9 +23,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<style>
+.center{
+	text-align: center;
+	font-size: 30px;
+}
+
+input {
+	width: 300px;
+	height: 30px;
+	font-size: 30px;
+	margin: 0 0 0 20px;
+}
+
+</style>
 <title>Insert title here</title>
 </head>
 <body>
+<div class="center">
 <h2>아이디 찾기 결과</h2>
  <% if (id == null) {%>
  		아이디 찾기에 실패하셨습니다.<br>
@@ -36,5 +51,6 @@
 	당신의 아이디는: <%= id %><br>
 	<a href="login.jsp">로그인 페이지로</a>
  <% } %> 
+ </div>
 </body>
 </html>
